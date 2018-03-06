@@ -1,4 +1,6 @@
-# AsTeRICS based AT solution
+# AsTeRICS Websocket Example
+
+This folder contains an example of how to use the built-in ARE websocket. The demo generates a sine signal and broadcasts the signal data through a websocket (ws://localhost:8082/ws/astericsData). The data is visualized in a [webpage](http://asterics.github.io/AsTeRICS/demos.html#WebSocket) with a Javascript live chart. You can also send data to the model by pressing the "Send test message" button.
 
 This folder contains an AsTeRICS based solution using the [APE (AsTeRICS Packaging Environment)](https://github.com/asterics/AsTeRICS/wiki/AsTeRICS-Packaging-Environment-(APE)) template folder structure.
 
@@ -12,8 +14,7 @@ If you want to create deployment files (.exe, .deb,...), you must have installed
 
 # Demos / Examples
 
-You can try some (other) [demos](http://asterics.github.io/AsTeRICS/demos.html) and [asterics solution example repositories](https://github.com/asterics?utf8=%E2%9C%93&q=topic%3Aexample&type=&language=) here.
-
+You can check the [demo](http://asterics.github.io/AsTeRICS/demos.html#WebSocket) and other [asterics solution example repositories](https://github.com/asterics?utf8=%E2%9C%93&q=topic%3Aexample&type=&language=).
 # Run project
 
 Enter
