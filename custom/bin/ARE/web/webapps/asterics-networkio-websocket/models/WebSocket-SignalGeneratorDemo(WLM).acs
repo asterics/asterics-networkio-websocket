@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" modelName="D:\P4All\asterics-networkio-websocket\custom\bin\ARE\web\webapps\asterics-networkio-websocket\models\WebSocket-SignalGeneratorDemo(WLM).acs_2018_3_6_12_10" version="20130320">
+<model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" modelName="D:\P4All\asterics-networkio-websocket\custom\bin\ARE\web\webapps\asterics-networkio-websocket\models\WebSocket-SignalGeneratorDemo(WLM).acs_2018_3_6_14_0" version="20130320">
   <modelDescription>
     <shortDescription />
     <requirements />
@@ -38,7 +38,7 @@
         <property name="offset" value="0" />
       </properties>
       <layout>
-        <posX>49</posX>
+        <posX>50</posX>
         <posY>140</posY>
       </layout>
     </component>
@@ -122,7 +122,7 @@
       </ports>
       <properties>
         <property name="caption" value="Info" />
-        <property name="default" value="The websocket plugin forwards the signal data to a websocket (http://localhost:8082/ws/astericsData). A demo webpage that connects to the websocket and visualizes the data can be accessed at http://localhost:8082/. Requirements: Start the ARE with --webservice" />
+        <property name="default" value="The websocket plugin forwards the signal data to a websocket (http://localhost:8082/ws/astericsData). A demo webpage that connects to the websocket and visualizes the data can be accessed at http://localhost:8082/." />
         <property name="editable" value="false" />
         <property name="fontSize" value="14" />
         <property name="textColor" value="10" />
@@ -143,7 +143,6 @@
   </components>
   <channels>
     <channel id="binding.0">
-      <description />
       <source>
         <component id="SignalGenerator.1" />
         <port id="out" />
@@ -154,7 +153,6 @@
       </target>
     </channel>
     <channel id="binding.1">
-      <description />
       <source>
         <component id="SignalGenerator.1" />
         <port id="out" />
@@ -165,7 +163,6 @@
       </target>
     </channel>
     <channel id="binding.2">
-      <description />
       <source>
         <component id="WebSocket.1" />
         <port id="OutA" />
