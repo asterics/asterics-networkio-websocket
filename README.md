@@ -25,14 +25,6 @@ to build all the dependencies and start the ARE.
 
 You can also start the ARE using the ARE start-scripts in the ```build/merged/bin/ARE``` folder.
 
-# Build project
-
-Open a console or use your favorite IDE and run
-
-```ant build-all```
-
-to build all the dependencies and merge all files together in the ```build/merged/bin/ARE``` folder
-
 # Release project
 
 To create a native installer open a console and run
@@ -57,6 +49,12 @@ custom
       |- <custom model file>.acs
       |- ...
     |-profile
+    |- web
+      |- webapps
+        |- startpage
+          |- start.html
+        |- <your webapps folder>
+          |- index.html
 package
   |- linux
   |- windows
@@ -75,9 +73,9 @@ Before the project can be run it must be [built](#build-project) (builds the AsT
 
 # Recommended workflow
 
-1. Save custom files (models, images, config files,...) to the custom/bin/ARE folder or modify them
-2. Call ```ant run```
-3. In case you have a Web UI, open [http://localhost:8081](http://localhost:8081)
+1. Save custom files (models, images, config files,...) to the custom/bin/ARE folder or subfolders (e.g. web/...) or modify them
+2. Call ```ant APE-copy & ant run-quick```
+3. This should automatically open [http://localhost:8081](http://localhost:8081) in your standard browser.
 4. If you want to modify the running model, press 'F8' to open it in the WebACS, then modify and upload it. To save successful modifications permanently, save the model file to the ```custom/bin/ARE/models``` folder again.
 5. Kill program and go to step 1
 
